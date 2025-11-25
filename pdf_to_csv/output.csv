@@ -1,0 +1,34 @@
+"Sample","Blue LED Value","Green LED Value","Red LED Value"
+"clear water",97,19,79
+"blue water",73,11,13
+"green water",35,15,14
+"tea water",33,13,70
+"+ 1 tsp milk",13,14,12
+"+1tsp milk + blue",10,9,6
+"+1tsp milk + green",9,13,7
+"+1tsp milk + tea",7,9,9
+
+"Sample","Blue % Transmitted","Green % Transmitted","Red % Transmitted"
+"clear water","100%","100%","100%"
+"blue water","75%","58%","17%"
+"green water","36%","79%","18%"
+"tea water","34%","68%","91%"
+"+ 1 tsp milk","100%","100%","100%"
+"+1tsp milk + blue","77%","64%","50%"
+"+1tsp milk + green","69%","93%","58%"
+"+1tsp milk + tea","54%","64%","75%" 
+
+"Sample","Color of Light","Max Value","Max Color"
+"clear water",Blue,97,Blue
+"blue water",Blue,73,Blue
+"green water",Green,35,Green
+"tea water",Red,70,Red 
+"+ 1 tsp milk",Blue,13,Blue
+"+1tsp milk + blue",Blue,10,Blue
+"+1tsp milk + green",Green,13,Green
+"+1tsp milk + tea",Red,9,Red 
+
+"Sample","Peaks At","Peak Value","Decreases At"
+"Blue water",Blue,80%,Green/Red
+"Green water",Green,95%,Blue/Red
+"Tea water",Red,80%,Blue/Green

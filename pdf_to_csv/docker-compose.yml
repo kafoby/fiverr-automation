@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  pdf-ocr-service:
+    build: .
+    container_name: pdf-ocr-csv
+    ports:
+      - "5000:5000"
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - VISION_MODEL=${VISION_MODEL:-google/gemini-flash-1.5-8b}
+      - CHAT_MODEL=${CHAT_MODEL:-google/gemini-flash-1.5-8b}
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:5000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
